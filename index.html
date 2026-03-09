@@ -3,6 +3,19 @@
 <head>
 <title>A Question For You ❤️</title>
 <style>
+  .hearts::before{
+  content:"❤️ ❤️ ❤️ ❤️ ❤️";
+  position:absolute;
+  top:0;
+  left:0;
+  font-size:30px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(100vh);}
+  100%{transform:translateY(-100vh);}
+}
 body{
   text-align:center;
   font-family:Arial;
